@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="begtutorials.css">
+    <title>Beginner Crochet Tutorials</title>
+    <meta name="description" content="Explore beginner-friendly crochet tutorials to kickstart your crafting journey.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-content">
+                <a href="#" class="logo">
+                    <span class="logo-text">Crochet<span class="logo-accent">Hub</span></span>
+                </a>
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="learn.html" class="nav-link">Learn</a>
+                    <a href="community.html" class="nav-link">Community</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="desktop-cta">
+                    <button class="btn-primary">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="tutorials">
+            <div class="section-container">
+                <h2 class="section-heading">Beginner Crochet Tutorials</h2>
+                <p class="section-subheading">Start your crochet journey with these helpful video tutorials.</p>
+                <section id="filters-container">
+                    <button id="filter-toggle">Filter</button>
+                    <section id="filters">
+                        <h2>Filter by Category</h2>
+                        <label><input type="checkbox" class="filter" value="clothing"> Clothing & Accessories</label>
+                        <label><input type="checkbox" class="filter" value="home"> Home Décor & Utility Items</label>
+                        <label><input type="checkbox" class="filter" value="toys"> Toys & Stuffed Items</label>
+                        <label><input type="checkbox" class="filter" value="baby"> Baby Items</label>
+                        <label><input type="checkbox" class="filter" value="jewelry"> Jewelry & Accessories</label>
+                        <label><input type="checkbox" class="filter" value="pets"> Pet Accessories</label>
+                    </section>
+                </section>
+                <div class="video-grid">
+                    <div class="video-card" data-category="clothing">
+                        <h4>Intro to Crochet Basics</h4>
+                        <iframe src="https://www.youtube.com/embed/aAxGTnVNJiE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-card"  data-category="toys">
+                        <h4>Learn to Crochet: First Stitches</h4>
+                        <iframe src="https://www.youtube.com/embed/GcOzdAzmtNM" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-card" data-category="toys">
+                        <h4>Crochet for Beginners: Easy Patterns</h4>
+                        <iframe src="https://www.youtube.com/embed/0gHmLDR2QLY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-card" data-category="clothing">
+                        <h4>Crochet Techniques for Newbies</h4>
+                        <iframe src="https://www.youtube.com/embed/bcfxeFmh5bg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-card" data-category="clothing">
+                        <h4>Making Your First Crochet Project</h4>
+                        <iframe src="https://www.youtube.com/embed/FfuecCpzixI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-card" data-category="home">
+                        <h4>Crochet Tips for Beginners</h4>
+                        <iframe src="https://www.youtube.com/embed/sgU6XvVWtco" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-card" data-category="clothing">
+                        <h4>Advanced Beginner Crochet Techniques</h4>
+                        <iframe src="https://www.youtube.com/embed/VKOSdFe_T0I" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">Crochet<span class="logo-accent">Hub</span></span>
+                    </div>
+                    <p class="footer-description">Every stitch tells a story. Join our vibrant community of crochet enthusiasts and discover the beauty of handmade.</p>
+                </div>
+                <div class="footer-links">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-menu">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="products.html" class="footer-link">Products</a></li>
+                        <li><a href="learn.html" class="footer-link">Learn</a></li>
+                        <li><a href="community.html" class="footer-link">Community</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h5 class="footer-title">Stay Updated</h5>
+                    <p class="footer-description">Subscribe to our newsletter for the latest products, tutorials, and community updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" class="form-input" required />
+                        <button type="submit" class="form-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year"></span> CrochetHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="search.js"></script>
+</body>
+</html>
