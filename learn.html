@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Crochet - CrochetHub</title>
+    <meta name="description" content="Learn how to crochet with comprehensive tutorials, video guides, and interactive resources from CrochetHub's learning center.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="learn.css">
+    <!-- JavaScript -->
+    <script src="chatbot.js" defer></script>
+    <script src="filter.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-content">
+                <!-- Logo -->       
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="Crochet Hub Logo">
+                </a>          
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="learn.html" class="nav-link">Learn</a>
+                    <a href="community.html" class="nav-link">Community</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="desktop-cta">
+                   
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="learning-intro">
+            <div class="section-container">
+                <h1 class="section-heading">Learn to Crochet</h1>
+                <p class="section-subheading">Discover the art of crochet with our comprehensive tutorials, video guides, and interactive resources.</p>
+            </div>
+        </section>
+
+        <section class="skill-level-indicator">
+            <div class="skill-card">
+                <div class="skill-icon">🌱</div>
+                <h4>Beginner</h4>
+                <p>Start your journey</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🌿</div>
+                <h4>Intermediate</h4>
+                <p>Build your skills</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🌳</div>
+                <h4>Advanced</h4>
+                <p>Master the craft</p>
+            </div>
+        </section>
+
+        <section class="featured-video">
+            <div class="section-container">
+                <h2 class="section-heading">Featured Tutorial</h2>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/aAxGTnVNJiE" title="Basic Crochet Tutorial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="video-description">This beginner-friendly tutorial will guide you through all the essential crochet stitches to get you started on your first project.</p>
+            </div>
+        </section>
+
+        <section class="tutorials">
+            <div class="section-container">
+                <h2 class="section-heading">Learning Paths</h2>
+                <div class="tutorial-grid">
+                    <article class="tutorial-card">
+                        <h4>Beginner's Guide to Crochet</h4>
+                        <p>Master the fundamentals of crochet with our step-by-step guide covering basic stitches, reading patterns, and simple projects perfect for beginners.</p>
+                        <a href="begtutorials.html" class="btn-outline">Start Learning</a>
+                    </article>
+                    <article class="tutorial-card">
+                        <h4>Intermediate Crochet Patterns</h4>
+                        <p>Take your skills to the next level with more complex patterns, texture techniques, and advanced stitch combinations for creating beautiful garments and accessories.</p>
+                        <a href="intermediatetutorials.html" class="btn-outline">Explore Patterns</a>
+                    </article>
+                    <article class="tutorial-card">
+                        <h4>Advanced Techniques</h4>
+                        <p>Perfect for experienced crocheters looking to master intricate designs, specialized techniques like overlay crochet, and creating your own unique patterns.</p>
+                        <a href="advancedtutorials.html" class="btn-outline">Advanced Lessons</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources">
+            <div class="section-container">
+                <h2 class="section-heading">Helpful Resources</h2>
+                <ul class="resource-list">
+                    <li><a href="#">Crochet Pattern Library</a></li>
+                    <li><a href="#">Video Tutorial Archive</a></li>
+                    <li><a href="#">Yarn & Hook Guide</a></li>
+                    <li><a href="#">Crochet Terminology</a></li>
+                    <li><a href="#">Stitch Dictionary</a></li>
+                    <li><a href="#">Printable Charts</a></li>
+                    <li><a href="#">Troubleshooting Tips</a></li>
+                    <li><a href="#">Project Ideas</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Chatbot Section -->
+        <section class="chatbot">
+            <div class="section-container">
+                <h2 class="section-heading">Ask the CrochetBot</h2>
+                <div id="chat-container">
+                    <div id="chat-box">
+                        <!-- Messages will be populated by JavaScript -->
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="user-input" placeholder="Ask me about crochet techniques..." />
+                        <button id="send-button">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">Crochet<span class="logo-accent">Hub</span></span>
+                    </div>
+                    <p class="footer-description">Every stitch tells a story. Join our vibrant community of crochet enthusiasts and discover the beauty of handmade.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-menu">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="products.html" class="footer-link">Products</a></li>
+                        <li><a href="learn.html" class="footer-link">Learn</a></li>
+                        <li><a href="community.html" class="footer-link">Community</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-link">Crochet Patterns</a></li>
+                        <li><a href="#" class="footer-link">Beginner Guides</a></li>
+                        <li><a href="#" class="footer-link">Video Tutorials</a></li>
+                        <li><a href="#" class="footer-link">Yarn Guide</a></li>
+                        <li><a href="#" class="footer-link">Crochet Terms</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h5 class="footer-title">Stay Updated</h5>
+                    <p class="footer-description">Subscribe to our newsletter for the latest tutorials and crochet inspiration.</p>
+                    <form class="newsletter-form">
+                        <div class="form-input-group">
+                            <input type="email" placeholder="Your email address" class="form-input" required />
+                            <button type="submit" class="form-button">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="form-disclaimer">We respect your privacy and will never share your details.</p>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year"></span> CrochetHub. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    <a href="#" class="footer-bottom-link">Terms of Service</a>
+                    <a href="#" class="footer-bottom-link">Cookies</a>
+                    <a href="#" class="footer-bottom-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

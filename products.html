@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - CrochetHub</title>
+    <meta name="description" content="Browse through our carefully curated collection of handmade crochet products.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-content">
+                <!-- Logo -->       
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="Crochet Hub Logo">
+                </a>          
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="learn.html" class="nav-link">Learn</a>
+                    <a href="community.html" class="nav-link">Community</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="desktop-cta">
+                    <!-- Shopping Cart Icon -->
+                    <a href="#" class="cart-icon" id="cart-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                        </svg>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </a>
+                    
+                    <!-- Mini Cart -->
+                    <div class="mini-cart" id="mini-cart">
+                        <div class="mini-cart-header">
+                            <h3>Your Cart</h3>
+                        </div>
+                        <ul class="cart-items" id="cart-items">
+                            <!-- Cart items will be populated here -->
+                            <li class="empty-cart">Your cart is empty</li>
+                        </ul>
+                        <div class="mini-cart-footer">
+                            <div class="cart-total">
+                                <span>Total:</span>
+                                <span id="cart-total">KES 0.00</span>
+                            </div>
+                            <a href="#" class="btn-primary">Checkout</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="filters-container">
+            <button id="filter-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                </svg>
+                Filter
+            </button>
+            <section id="filters">
+                <h2>Filter by Category</h2>
+                <label><input type="checkbox" class="filter" value="clothing"> Clothing & Accessories</label>
+                <label><input type="checkbox" class="filter" value="home"> Home Décor & Utility Items</label>
+                <label><input type="checkbox" class="filter" value="toys"> Toys & Stuffed Items</label>
+                <label><input type="checkbox" class="filter" value="baby"> Baby Items</label>
+                <label><input type="checkbox" class="filter" value="jewelry"> Jewelry & Accessories</label>
+                <label><input type="checkbox" class="filter" value="pets"> Pet Accessories</label>
+            </section>
+        </section>
+    
+        <section id="products" class="products">
+            <div class="container">
+                <h2 class="section-heading">Featured <span class="text-coral">Products</span></h2>
+                <p class="section-subheading">
+                    Browse through our carefully curated collection of handmade crochet products.
+                </p>
+              
+                <div class="product-grid">
+                    <div class="product-card" data-category="clothing">
+                        <span class="product-badge badge-new">New</span>
+                        <img src="img/product1.jpg" alt="Crochet Hat">
+                        <div class="product-info">
+                            <h3>Crochet Hat</h3>
+                            <p>KES 25.00</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="quick-view">Quick View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="home">
+                        <img src="img/product2.jpg" alt="Crochet Bag">
+                        <div class="product-info">
+                            <h3>Crochet Bag</h3>
+                            <p>KES 35.00</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="quick-view">Quick View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <span class="product-badge badge-sale">Sale</span>
+                        <img src="img/product3.jpg" alt="Crochet Sweater">
+                        <div class="product-info">
+                            <h3>Crochet Sweater</h3>
+                            <p>KES 50.00</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="quick-view">Quick View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="baby">
+                        <img src="img/product4.jpg" alt="Crochet Coasters">
+                        <div class="product-info">
+                            <h3>Crochet Coasters</h3>
+                            <p>KES 15.00</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="quick-view">Quick View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="jewelry">
+                        <img src="img/product5.jpg" alt="Crochet Hat">
+                        <div class="product-info">
+                            <h3>Crochet Earrings</h3>
+                            <p>KES 25.00</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="quick-view">Quick View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="pets">
+                        <img src="img/product6.jpg" alt="Crochet Bag">
+                        <div class="product-info">
+                            <h3>Pet Collar</h3>
+                            <p>KES 35.00</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="quick-view">Quick View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="pets">
+                        <span class="product-badge badge-new">New</span>
+                        <img src="img/product7.jpg" alt="Crochet Sweater">
+                        <div class="product-info">
+                            <h3>Pet Bed</h3>
+                            <p>KES 50.00</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="quick-view">Quick View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="clothing">
+                        <img src="img/product8.jpg" alt="Crochet Coasters">
+                        <div class="product-info">
+                            <h3>Crochet Scarf</h3>
+                            <p>KES 15.00</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="quick-view">Quick View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="clothing">
+                        <img src="img/product9.jpg" alt="Crochet Coasters">
+                        <div class="product-info">
+                            <h3>Crochet Mittens</h3>
+                            <p>KES 15.00</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="quick-view">Quick View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="home">
+                        <span class="product-badge badge-sale">Sale</span>
+                        <img src="img/product1.jpg" alt="Crochet Coasters">
+                        <div class="product-info">
+                            <h3>Crochet Cushion</h3>
+                            <p>KES 15.00</p>
+                            <div class="product-actions">
+                                <button class="add-to-cart">Add to Cart</button>
+                                <button class="quick-view">Quick View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>  
+    
+    <!-- Quick View Modal -->
+    <div class="modal" id="quick-view-modal">
+        <div class="modal-content">
+            <button id="close-modal" class="close-modal">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-image">
+                    <img id="modal-product-image" src="" alt="Product">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modal-product-name"></h2>
+                    <p class="modal-price" id="modal-product-price"></p>
+                    <span class="modal-category" id="modal-product-category"></span>
+                    <p class="modal-description">
+                        This handcrafted crochet item is made with high-quality yarn, bringing comfort and style to your everyday life. Each piece is unique and created with attention to detail.
+                    </p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decrease-quantity">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input" id="quantity">
+                        <button class="quantity-btn" id="increase-quantity">+</button>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="add-to-cart" id="modal-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Brand section -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        Crochet<span style="color: var(--accent-color);">Hub</span>
+                    </div>
+                    <p class="footer-description">
+                        Every stitch tells a story. Join our vibrant community of crochet enthusiasts and discover the beauty of handmade.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Navigation -->
+                <div class="footer-links">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-menu">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="products.html" class="footer-link">Products</a></li>
+                        <li><a href="learn.html" class="footer-link">Tutorials</a></li>
+                        <li><a href="community.html" class="footer-link">Community</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div class="footer-links">
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-link">Crochet Patterns</a></li>
+                        <li><a href="#" class="footer-link">Beginner Guides</a></li>
+                        <li><a href="#" class="footer-link">Video Tutorials</a></li>
+                        <li><a href="#" class="footer-link">Yarn Guide</a></li>
+                        <li><a href="#" class="footer-link">Crochet Terms</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-newsletter">
+                    <h5 class="footer-title">Stay Updated</h5>
+                    <p class="footer-description">
+                        Subscribe to our newsletter for the latest products, tutorials, and community updates.
+                    </p>
+                    <form class="newsletter-form">
+                        <div class="form-input-group">
+                            <input 
+                                type="email" 
+                                placeholder="Your email address" 
+                                class="form-input"
+                                required
+                            />
+                            <button type="submit" class="form-button">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="form-disclaimer">
+                            We respect your privacy and will never share your details.
+                        </p>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; <span id="current-year"></span> CrochetHub. All rights reserved.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    <a href="#" class="footer-bottom-link">Terms of Service</a>
+                    <a href="#" class="footer-bottom-link">Shipping</a>
+                    <a href="#" class="footer-bottom-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="filter.js"></script>
+</body>
+</html>
